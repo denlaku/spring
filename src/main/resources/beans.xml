@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:async="http://www.tl.com/schema/spring-ext/async"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.tl.com/schema/spring-ext/async http://www.tl.com/schema/spring-ext/spring-async.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
+
+	<async:processor type="name">
+		<ref bean="sendService"/>
+	</async:processor>
+	<context:component-scan base-package="com.dens"></context:component-scan>
+	<context:property-placeholder location="classpath:props" />
+	<bean id="userVO" name="user1, user2" class="com.dens.sp01.vo.UserVO" init-method="initM" p:value="Dvvvv" >
+		<meta key="meta" value="metaValue"/>
+		<qualifier type="org.springframework.beans.factory.annotation.Qualifier" value="userVO1"></qualifier>
+		<property name="name" value="${name}"></property>
+		<property name="car" ref="carVO"></property>
+		<property name="carId">
+			<idref bean="carVO"/>
+		</property>
+		<property name="list" ref="list"></property>
+	</bean>
+	<!-- <pv:ref bean="carVO" class="com.dens.sp01.vo.UserVO" /> -->
+	
+	<bean id="carVO" class="com.dens.sp01.vo.CarVO">
+		<property name="brand" value="BM"></property>
+		<property name="name" value="Nino"></property>
+	</bean>
+	
+	<!-- <context:component-scan base-package="com.dens.sp01.vo"></context:component-scan> -->
+	<!-- <context:property-placeholder location="classpath:props"/> -->
+
+	
+
+	<bean id="addressVO" class="com.dens.sp01.vo.AddressVO">
+		<property name="code" value="SZ"></property>
+		<property name="name" value="ShenZhen"></property>
+	</bean>
+	<bean id="addressVO2" class="com.dens.sp01.vo.AddressVO">
+		<property name="code" value="WH"></property>
+		<property name="name" value="WuHan"></property>
+	</bean>
+	
+	<util:list id="list">
+		<value>11</value>
+		<value>22</value>
+		<value>33</value>
+	</util:list>
+
+	<util:map id="map">
+		<entry>
+			<key>
+				<value>A</value>
+			</key>
+			<value>1</value>
+		</entry>
+	</util:map>
+</beans>

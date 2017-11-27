@@ -1,0 +1,3 @@
+http\://www.dens.com/schema/spring-ext/async=com.dens.sp01.handler.AsyncNamespaceHandler
+http\://www.dens.com/schema/spring-ext/pv=com.dens.sp01.handler.PropertyValueNamespaceHandler
+http\://www.dens.com/schema/spring-ext/pp=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler
