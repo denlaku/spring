@@ -18,5 +18,5 @@
 		<value>bigTaskConduit</value>
 	</async:conduit>
 
-	<context:component-scan base-package="com.tl.async"></context:component-scan>
+	<context:component-scan base-package="com.dens.async"></context:component-scan>
 </beans>
