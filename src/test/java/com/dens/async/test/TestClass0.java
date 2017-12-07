@@ -6,9 +6,9 @@ import org.junit.Test;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.dens.async.AsyncExecutor;
-import com.dens.async.service.ReceiveService;
-import com.dens.async.vo.AsyncVO;
+import com.denlaku.async.AsyncExecutor;
+import com.denlaku.async.service.ReceiveService;
+import com.denlaku.async.vo.AsyncVO;
 
 public class TestClass0 {
 

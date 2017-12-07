@@ -5,9 +5,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-import com.dens.sp01.vo.AddressVO;
-import com.dens.sp01.vo.CarVO;
-import com.dens.sp01.vo.UserVO;
+import com.denlaku.spring.vo.AddressVO;
+import com.denlaku.spring.vo.CarVO;
+import com.denlaku.spring.vo.UserVO;
 
 public class TestClass {
 	

@@ -2,8 +2,8 @@ package com.dens.async.test;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.dens.async.AsyncExecutor;
-import com.dens.async.vo.AsyncVO;
+import com.denlaku.async.AsyncExecutor;
+import com.denlaku.async.vo.AsyncVO;
 
 public class TestClass1 {
 

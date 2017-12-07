@@ -4,8 +4,8 @@ import org.junit.Test;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.dens.async.service.ReceiveService;
-import com.dens.sp01.vo.UserVO;
+import com.denlaku.async.service.ReceiveService;
+import com.denlaku.spring.vo.UserVO;
 
 public class TestClass0 {
 

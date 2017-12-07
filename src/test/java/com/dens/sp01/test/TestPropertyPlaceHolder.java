@@ -3,7 +3,7 @@ package com.dens.sp01.test;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.dens.sp01.vo.UserVO;
+import com.denlaku.spring.vo.UserVO;
 
 public class TestPropertyPlaceHolder {
 
